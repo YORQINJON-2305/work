@@ -120,8 +120,16 @@ a {
 }
 
 /* HERO START */
+
+.hero-wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 2800px;
+  margin: 0 auto;
+}
+
 .hero {
-	padding: 15px 0 200px;
+	padding: 30px 0 200px 0;
 	background-image: url("../images/girl.png");
 	background-size: 450px;
 	background-position: calc(50% - 480px) calc(50% - 30px);
@@ -246,6 +254,16 @@ a {
 	font-size: 18px;
 }
 
+@media only screen and (min-width: 1600px) {
+	body {
+		background-size: 50% 100%, 100% 100%;
+	}
+
+	.hero-info-wrap {
+		padding-top: 200px;
+	}
+}
+
 @media only screen and (max-width: 1335px) {
 	.hero {
 		background-size: contain;
@@ -349,7 +367,6 @@ a {
 
 @media only screen and (max-width: 850px) {
 	.hero {
-		/* background-size: contain; */
 		background-position: calc(50% - 230px) calc(50% - 30px);
 	}
 }
@@ -423,16 +440,31 @@ a {
 	}
 }
 
-@media only screen and (max-width: 570px) {
-
-  body{
-    background-position: calc(50% + 100px), center;
+@media only screen and (max-width: 768px) {
+  .hero-info-wrap{
+    padding-top: 320px;
   }
+}
 
-  .hero{
-    background-image: url("../images/girl-phone.png");
-    background-position: calc(50% - 40px) calc(50% - 250px);
-    background-size: 266px;
+@media only screen and (max-width: 760px) {
+  .hero-info-wrap{
+    padding-top: 170px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+	body {
+		background-position: calc(50% + 100px), center;
+	}
+
+	.hero {
+		background-image: url("../images/girl-phone.png");
+		background-position: calc(50% - 40px) calc(50% - 230px);
+		background-size: 266px;
+	}
+
+  .hero-info-wrap{
+    padding-top: 23%;
   }
 
 	.header-item:not(:last-child) {
@@ -442,7 +474,6 @@ a {
 	.header-link {
 		display: flex;
 		text-align: center;
-		/* padding: 12px 30px; */
 		font-size: 14px;
 	}
 
@@ -456,14 +487,17 @@ a {
 }
 
 @media only screen and (max-width: 518px) {
-
-  .site-header{
-    padding-top: 10px;
-  }
+	.site-header {
+		padding-top: 10px;
+	}
 
 	.header-list {
 		padding: 10px 15px;
 	}
+  
+  .hero-info-wrap{
+    padding-top: 220px;
+  }
 
 	.speach-btn {
 		width: 30px;
@@ -484,9 +518,9 @@ a {
 		width: 120px;
 	}
 
-  .hero-btn-wrap{
-    top: 30px;
-  }
+	.hero-btn-wrap {
+		top: 30px;
+	}
 }
 
 @media only screen and (max-width: 392px) {
@@ -495,9 +529,9 @@ a {
 		font-size: 13px;
 	}
 
-  .hero{
-    background-position: calc(50% - 40px) calc(50% - 220px);
-  }
+	.hero {
+		background-position: calc(50% - 40px) calc(50% - 220px);
+	}
 
 	.speach-text {
 		margin-top: 0;
@@ -509,13 +543,31 @@ a {
 	}
 }
 
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 376px) {
+	.hero {
+		background-position: calc(50% - 40px) calc(50% - 230px);
+		background-size: 200px;
+	}
 
-  .hero{
-    background-position: calc(50% - 40px) calc(50% - 200px);
-  }
+	.hero-info-wrap {
+		padding-top: 130px;
+	}
 
-  .hero-info-wrap{
-    padding-top: 100px;
-  }
+	.speach-btn-wrap {
+		width: 130px;
+		height: 130px;
+	}
+
+	.speach-bg-radial {
+		width: 90px;
+		height: 90px;
+	}
+
+	.speach-img {
+		width: 100px;
+	}
+
+	.hero-info-text {
+		font-size: 12px;
+	}
 }
